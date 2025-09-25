@@ -9,12 +9,18 @@
 </head>
 
 <body>
+    <div class="groupInfo">
     <h1>Fortune Teller</h1>
     <label for="name">Enter Your Name:</label>
     <input type="text" id="name" placeholder="Your name">
     <label for="age">Enter Your Age:</label>
     <input type="text" id="name" placeholder="Your age">
 
+    <button onclick="tellFortune()">Get Fortune</button>
+
+    <div id="fortuneAnswers" class="result"></div>
+    
+</div>
     <script src="script.js"></script>
 </body>
 
