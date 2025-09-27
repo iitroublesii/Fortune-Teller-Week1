@@ -26,5 +26,5 @@ function tellFortune() {
     else if (age <= 50) fortunes.push("Wisdom inspires others.");
     else fortunes.push("Your legacy shines brightly.");
 
-    resultBox.innerText = `${name}, Your Fortune Is:\n\n` + fortunes.join("\n");
+    resultBox.innerText = `${name}, \n\n` + fortunes.join("\n");
 }

@@ -9,18 +9,25 @@
 </head>
 
 <body>
-   
-    <h1>Fortune Teller</h1>
 
-    <label for="userName">Enter Your Name:</label>
+    <h1>Fortune Teller</h1>
+    <p>Enter your name and age to see your fortune!</p>
+    <img src="crystalBall.png" alt="Crystal Ball">
+
+<div class ="userInfo"></div>
+
+    <label for="userName">Enter Name:</label>
     <input type="text" id="userName" placeholder="Your name">
-    <label for="userAge">Enter Your Age:</label>
+
+    <label for="userAge">Enter Age:</label>
     <input type="text" id="userAge" placeholder="Your age">
+    
+<div>
 
     <button onclick="tellFortune()">Get Fortune</button>
 
     <div id="fortuneAnswers" class="answers"></div>
-    
+
 
     <script src="script.js"></script>
 </body>
