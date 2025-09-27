@@ -12,10 +12,19 @@ function tellFortune() {
 
     //Name Fortunes
     if (name.length > 7) fortunes.push("You will find lasting love.");
+    else if (name.length < 5) fortunes.push("Great opportunities are near.");
+    else fortunes.push("A rare chance awaits you.");
 
-    if (name[0].toLowerCase() === 'l') fortunes.push("Abundance and prosperity will flow to you.");
+    if (name[0].toLowerCase() === 'l') fortunes.push("Abundance is coming.");
+    if (name.toLowerCase().includes('e')) fortunes.push("Kindness surrounds you.");
 
-    if (name.toLowerCase().includes('e')) fortunes.push("Love and kindness will surround you in the days ahead.");
 
-     resultBox.innerText = `${name}, Your Fortune Is:\n\n` + fortunes.join("\n");
+    //Age Fortunes
+    if (age < 18) fortunes.push("Imagination is your power.");
+    else if (age <= 20) fortunes.push("Follow your dreams.");
+    else if (age <= 40) fortunes.push("Hard work brings success.");
+    else if (age <= 50) fortunes.push("Wisdom inspires others.");
+    else fortunes.push("Your legacy shines brightly.");
+
+    resultBox.innerText = `${name}, Your Fortune Is:\n\n` + fortunes.join("\n");
 }
